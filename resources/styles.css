@@ -1,0 +1,135 @@
+.background-animation {
+    background:linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207));
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.blue-background{
+    background-color: rgb(200 210 255);
+}
+
+.panel{
+    background-color:rgba(255,255,255,0.85);
+    min-height: 350px;
+}
+
+.btn-blue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    cursor: pointer;
+    height: 40px;
+    border: none !important;
+    border-radius: 50px !important;
+    background: none !important;
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    transition: background-color 0.3s ease;
+}
+    .btn-blue:hover, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active, #dice:hover,#coin:hover{
+        background-color: #00beff !important;
+        border-color:#00beff !important ;
+    }
+
+.btn-blue, .nav-tabs .nav-link {
+    background-color: #4481eb !important;
+}
+
+.nav-tabs .nav-link,.nav-tabs .nav-link.active, .btn-blue, .figure-dice, .figure-coin{
+    color:white;
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.figure-dice, .figure-coin,.nav-tabs .nav-link, .nav-tabs .nav-link.active{
+    border:3px #7eadff solid;
+}
+
+.figure-dice, .figure-coin{
+    display: inline-block;
+    padding-top:2.8rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    background-color: #4481eb;
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+#dice{
+    border-radius: 1rem;
+}
+
+#coin{
+    border-radius: 5rem;
+}
+
+#dice,#coin{
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+#inputDiceSides{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+@media only screen and (min-width: 768px){
+    #inputDiceSides{
+        width: 80%;
+    }
+    .figure-dice, .figure-coin{
+        padding-top:4.8rem;
+        width: 12rem;
+        height: 12rem;
+        font-size: 20px !important;
+    }
+    #coin{
+        border-radius: 25rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #inputDiceSides{
+        width: 50%;
+    }
+    .figure-dice, .figure-coin{
+        padding-top:6.3rem;
+        width: 16rem;
+        height: 16rem;
+        font-size: 32px !important;
+    }
+    #coin{
+        border-radius: 25rem;
+    }
+}
